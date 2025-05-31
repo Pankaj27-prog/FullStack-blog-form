@@ -12,27 +12,92 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+/* App.css */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app-container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f2027;  /* nice dark gradient */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
+  min-height: 100vh;
+  min-width: 400px;
+  padding: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+  color: #00ffea;
+  text-shadow: 0 0 10px #00ffea;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input[type="text"] {
+  padding: 12px;
+  width: 450px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px #00ffea44;
+  transition: box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus {
+  box-shadow: 0 0 15px #00ffea;
+}
+
+button {
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #00ffea;
+  color: #003333;
+  font-weight: 700;
+  box-shadow: 0 0 12px #00ffea;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #00e0d7;
+  box-shadow: 0 0 20px #00e0d7;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+  font-size: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  margin: 12px 0;
+  padding: 10px 15px;
+  background: #005050aa;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #00ffea44;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-btn, .delete-btn {
+  background: transparent;
+  border: none;
+  color: #00ffea;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  color: #00e0d7;
 }
